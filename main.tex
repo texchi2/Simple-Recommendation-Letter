@@ -1,14 +1,50 @@
 \documentclass{letter}
 \usepackage[top=0.5cm, bottom=0.5cm]{geometry}
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{wrapfig}
+
+% Set page margins
+%\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+
+%\usepackage{wrapfig}
+
+\usepackage[style=ieee, sorting=ydnt]{biblatex} % instead of bibtex; sorts them in reverse chronological order: ydnt
+\addbibresource{Tex_publications_since2002.bib}
+
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace, wrapfig}
+
+% --- Page layout settings ---
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
 
 %\usepackage{lipsum}
 
 \address{\\ \\ \\ \large \textbf{Branch of} \\ \large \textbf{
 Oral and Maxillofacial Surgery} \\ Wan-Fang Hospital,\\ Taipei Medical University \\}
 \date{}
+
+
+% Chinese
+\usepackage{xeCJK} % for Chinese, compiling by XeLaTex
+
+\usepackage{fontspec} %設定字體
+% Fandol font (the default)  not shown "內"
+\setCJKmainfont{AR PL UMing TW MBE} % AR PL UMing TW MBE or "UKai" https://www.overleaf.com/learn/latex/Questions/Which_OTF_or_TTF_fonts_are_supported_via_fontspec%3F#Chinese
+%BiauKai} %標楷體 from macOS %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+%\setCJKmainfont[Vertical=RotatedGlyphs]{AR PL UMing TW MBE}
+
 
 \begin{document}
 \begin{letter}
@@ -37,5 +73,12 @@ Sincerely, \\
 Chi, Li-Hsing Tex \\
 Director of OMS, TMWH
 
+\clearpage
+
+\include{CV_1.tex}
+
 \end{letter}
+
+
+
 \end{document}
