@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, top=0.5cm, bottom=0.5cm]{geometry}
+\usepackage{pdfpages}
+% Set page margins
+%\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+\usepackage{multirow}
+
+
+\usepackage{adjustbox}
+%\setlength{\baselineskip}{1em}
+%\renewcommand{\baselinestretch}{0.7}
+%\usepackage{wrapfig}
+
+\usepackage[style=ieee, sorting=ydnt]{biblatex} % instead of bibtex; sorts them in reverse chronological order: ydnt
+\addbibresource{Tex_publications_since2002.bib}
+
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace, wrapfig}
+
+% --- Page layout settings ---
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+%\usepackage[dvipsnames]{xcolor}
+%\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+%\usepackage{lipsum}
+
+%\address{\\ \\ \\ \large \textbf{Division of} \\ \large \textbf{
+%Oral and Maxillofacial Surgery} \\ Wan Fang Hospital,\\ Taipei Medical University \\}
+%\date{}
+%\address{\\ \\ \\  
+%Department of Dentistry, \\ %Taipei Medical University Hospital\\}
+%College of Oral Medicine,\\ Taipei Medical University \\}
+%\date{}
+
+% Chinese
+\usepackage{xeCJK} % for Chinese, compiling by XeLaTex
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}  % setting the indentation to be two Chinese characters size.
+\usepackage{fontspec} %設定字體
+% Fandol font (the default)  not shown "內"
+\setCJKmainfont{AR PL UMing TW MBE} % AR PL UMing TW MBE or "UKai" https://www.overleaf.com/learn/latex/Questions/Which_OTF_or_TTF_fonts_are_supported_via_fontspec%3F#Chinese
+%BiauKai} %標楷體 from macOS %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+%\setCJKmainfont[Vertical=RotatedGlyphs]{AR PL UMing TW MBE}
+
+
+
+
+\begin{document}
+
+%\begin{letter}
+
+%\linespread{0.5}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+
+\begin{adjustbox}{pagecenter, scale={1}{1.7}}
+%{totalheight=\textheight-2\baselineskip}
+\begin{tabular}{|lllll|}
+\hline
+\multicolumn{4}{|c|}{台灣法醫學會個人入會申請書}                                                                                     & \multirow{4}{*}{二張相片} \\ \cline{1-4}
+\multicolumn{1}{|l|}{會員類別} & \multicolumn{1}{l|}{會員}         & \multicolumn{1}{l|}{準會員}    & \multicolumn{1}{l|}{}      &                       \\ \cline{1-4}
+\multicolumn{1}{|l|}{中文姓名} & \multicolumn{3}{l|}{祁力行}                                                                   &                       \\ \cline{1-4}
+\multicolumn{1}{|l|}{英文姓名} & \multicolumn{3}{l|}{Chi, Li-Hsing}                                                         &                       \\ \hline
+\multicolumn{1}{|l|}{性別}   & \multicolumn{1}{l|}{男}          & \multicolumn{1}{l|}{女}      & \multicolumn{1}{l|}{介紹人}   & 吳木榮                   \\ \hline
+\multicolumn{1}{|l|}{出生日期} & \multicolumn{2}{l|}{058年11月07日}                               & \multicolumn{1}{l|}{身份證字號} & A120475979            \\ \hline
+\multicolumn{1}{|l|}{最高學歷} & \multicolumn{3}{l|}{臺北醫學大學轉譯醫院博士}                                                          & (請附上畢業證書影本)           \\ \hline
+\multicolumn{1}{|l|}{經歷}   & \multicolumn{4}{l|}{中華民國駐非洲醫療團}                                                                                    \\ \hline
+\multicolumn{1}{|l|}{專長}   & \multicolumn{4}{l|}{口腔顎面外科、轉譯醫學、醫學資訊學、法醫學}                                                                         \\ \hline
+\multicolumn{1}{|l|}{服務單位} & \multicolumn{2}{l|}{臺北市立萬芳醫院口腔顎面外科}                           & \multicolumn{1}{l|}{職稱}    & 科主任                   \\ \hline
+\multicolumn{1}{|l|}{住家地址} & \multicolumn{4}{l|}{新北市汐止區國興街16巷10號7F}                                                                             \\ \hline
+\multicolumn{1}{|l|}{工作地址} & \multicolumn{4}{l|}{116臺北市文山區興隆路三段111號}                                                                            \\ \hline
+\multicolumn{1}{|l|}{家用電話} & \multicolumn{1}{l|}{0909123537} & \multicolumn{1}{l|}{辦公室電話}  & \multicolumn{2}{l|}{(02)29307930}                  \\ \hline
+\multicolumn{1}{|l|}{傳真電話} & \multicolumn{1}{l|}{}           & \multicolumn{1}{l|}{E-mail} & \multicolumn{2}{l|}{texchi2@gmail.com}             \\ \hline
+\multicolumn{1}{|l|}{申請日期} & \multicolumn{2}{l|}{111年02月25日}                               & \multicolumn{1}{l|}{核准日期}  & \hspace{2mm} 年 \hspace{2mm}  月  \hspace{2mm} 日             \\ \hline
+\multicolumn{1}{|l|}{會員編號} & \multicolumn{4}{l|}{}                                                                                              \\ \hline
+\multicolumn{5}{|l|}{\begin{tabular}[c]{@{}l@{}} 
+%\begingroup
+\tiny
+個人會員申請資格如下：\\ \tiny 一、基本會員：贊同本會宗旨，年滿二十歲，具有大專以上醫學、衛生、鑑識相關背景畢業，且與法醫學業務%\\ \tiny
+相關之人員，經本會審核通過者，得為本會基本會員。\\ \tiny
+二、準會員：贊同本會宗旨，年滿二十歲，具有大專以上醫學、衛生、鑑識或法律相關背景畢業，經本會審核%\\ \tiny
+通過者，得為本會準會員。\\
+\tiny 三、入會費：基本會員新台幣壹仟元，準會員新台幣捌佰元，於會員入會時繳納。\\
+\tiny 四、常年會費：基本會員新台幣壹仟元，準會員新台幣捌佰元，於會員入會時繳納。\\
+\tiny 請備齊所有證件資料如下：身分證正反面影本、最高學歷畢業證書影本、二張照片 申請時應填具入會申請書，經理事會審核通過後，再繳納會費。	請將資料填寫後，連同證件一起寄至\\
+\tiny 100台北市中山南路七號三樓  \hspace{1mm} 台灣法醫學會 \hspace{1mm} 電話:(02)2312-3456 轉65493
+%\endgroup 
+\end{tabular}} \\ \hline
+\end{tabular}%
+\end{adjustbox}
+%\caption{}
+%\label{tab:my-table}
+\end{table}
+
+%\end{letter}
+\end{document}
