@@ -1,0 +1,133 @@
+\documentclass{letter}
+\usepackage[top=0.5cm, bottom=0.5cm]{geometry}
+\usepackage{pdfpages}
+% Set page margins
+%\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+
+%\usepackage{wrapfig}
+
+\usepackage[style=ieee, sorting=ydnt]{biblatex} % instead of bibtex; sorts them in reverse chronological order: ydnt
+\addbibresource{Tex_publications_since2002.bib}
+
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace, wrapfig}
+
+% --- Page layout settings ---
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+%\usepackage{lipsum}
+
+%\address{\\ \\ \\ \large \textbf{Division of} \\ \large \textbf{
+%Oral and Maxillofacial Surgery} \\ Wan Fang Hospital,\\ Taipei Medical University \\}
+%\date{}
+\address{\\ \\ \\  
+%Department of Dentistry, \\
+%Taipei Medical University Hospital\\}
+Department of Molecular Parasitology \\ and Tropical Diseases, \\
+School of Medicine,\\
+%College of Medicine,\\ 
+Taipei Medical University \\}
+\date{}
+
+% Chinese
+\usepackage{xeCJK} % for Chinese, compiling by XeLaTex
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}  % setting the indentation to be two Chinese characters size.
+\usepackage{fontspec} %設定字體
+% Fandol font (the default)  not shown "內"
+\setCJKmainfont{AR PL UMing TW MBE} % AR PL UMing TW MBE or "UKai" https://www.overleaf.com/learn/latex/Questions/Which_OTF_or_TTF_fonts_are_supported_via_fontspec%3F#Chinese
+%BiauKai} %標楷體 from macOS %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+%\setCJKmainfont[Vertical=RotatedGlyphs]{AR PL UMing TW MBE}
+
+
+\begin{document}
+\begin{letter}
+{
+\centering \Large \textbf{推薦信}%Letter of Recommendation}
+}
+
+\hfill
+\begin{wrapfigure}[1]{l}{0.65\linewidth}%{height=0.65\textheight}
+    %\centering
+    \includegraphics[width=0.2\textheight]{TMU_logo.jpg}
+\end{wrapfigure}
+
+\opening{敬啟者} %Dear 吳木榮老師}%To Whom it May Concern:} % admissions officer
+% 吳木榮 講師 法醫牙科學、法醫病理學
+%分機：65507
+%ntuhmzw@gmail.com
+\medskip 
+
+%Dr. Sun Yihua, ，天資聰穎
+\indent 我帶領的熱帶醫學團隊，於2009年在非洲出任務時，初次見到祁力行醫師。%，也曾指導過法醫學。
+%他受到父親的影響，考取醫學院後，對大學時代的三門課程「大體解剖、電腦概論、法醫學概論」，有著深刻的印象。
+%自見習時期起，對口腔顎面外科深感興趣，以成為「真正的醫師」為己任。歷經實習、二年期的一般住院醫師訓練後，進入口外專科訓練長達四年，堅韌卓絕，親力親為，不辭勞苦，全年無休天天準時查房，守護患者，遵從主治醫師教導。即使身體不適，在病房接受點滴注射後，第二天依舊打起精神執行口腔癌手術。在2003年臺灣疫情大起之時，堅守崗位，在危機中協助口腔顎面外科安然渡過難關。
+%During his residency training, Dr. Chi Li-Hsing, a talented and intelligent doctor, developed a strong interest in oral and maxillofacial surgery and made it his aim to become a "real doctor."
+%He is tenacious, engaged, and hardworking, with 3.5 years of speciality training in oral and maxillofacial surgery.
+%He guards patients and rounds the ward at 7:30 a.m. every day of the year, 24 hours a day, 365 days a year, and follows the attending physician's instructions. He was energized to undergo oral cancer surgery the next morning after receiving an intravenous injection in the ward, despite having a cold.
+%Although his family's concerns, when the SARS epidemic broke out in Taiwan in 2003, he remained at his post and help the oral and maxillofacial surgery in the crisis.
+%In 2009, he volunteered for about three years at Taiwan Medical Mission (in Africa) in compliance with Taipei Medical University policy. Seeing countries with very different norms and customs has made him realize how important it is for doctors and patients to have a pure engagement. He went back to school after returning to Taiwan early 2012 in order to discover a question. He completed a two-year master's program in biomedical informatics in which he has learnt useful information technology before enrolling in a doctoral program in translational medicine. He further completed seven years of graduate studies with the guidance and encouragement of faculty from Taipei Medical University and Academia Sinica, and even during the COVID-19 outbreak of 2021. In terms of the search answer, it has progressively acquired reality.
+自2009年，配合外交部國合會計畫，臺北醫學大學派遣祁醫師，至非洲醫療團長駐服務近三年。他見識到風土民情絕然不同的國家，更體認到純真的醫病關係。%因為病情須要，藉由遠距醫學工具，克服時差與網路頻寬的限制，與北醫病理科共同研判病情，以選擇適合患者的治療計劃。
+在史瓦濟蘭王國，以及聖多美普林西比共和國，祁醫師均以醫療團員的身份，熱心協助我們的熱帶醫學研究，由實驗室的訪查、對當地技術員的教育訓練，到腸道寄生蟲的田野調查(小學生健檢)，甚至糞便、血清檢體的實驗室操作，還有連日清教授的(駐聖國)防瘧團實驗室，都能看到他的親身參與，以及時時發問的好學精神。因為瘧疾疫情的須要，我們指導他學會血液抹片檢查(厚片、薄片)，配合快篩試劑，幫助發燒病患，適時投予抗瘧藥物。藉由遠距醫療技術，北醫熱帶醫學中心能夠與他共同研判病情。
+
+2012返臺重新回到學校，因為在他的白袍熱血之下，還想尋找一個答案。二年的醫學資訊學碩士班，學習到良好的數位工具與統計原理，接著逕讀轉譯醫學博士班，在北醫與中研院老師的指導與激勵之下，於2022年畢業。%至於那個尋找中的答案，也逐漸成形。在他口腔顎面外科的執業生涯中，一直與病理學科互動良好，保持緊密的關係，並與口腔顎面外科與口腔病理科的老師們，每週六固定在線上相會，一同帶領住院醫師與醫學生們，討論當週的病理切片與患者的臨床病情。
+% https://quillbot.com/
+%When he was studying in the doctoral program, he recalled the spirit of forensic medicine 25 years ago, and took the initiative to attend the forensic medicine course in the university.
+%He also practiced interpreting the judgments of major criminal cases, and the judicial examination reports in them made him very fascinated by the important role of expert witnesses.
+%At that time, his father suffered a stroke and was bedridden, which made him realize the limit of medical care for physical diseases, and turned to pay more attention to spiritual growth and its impact on physical health. Traditional Chinese medicine has many unique insights on this part.
+就讀博士班時，他憶起25年前的法醫魂，主動旁聽大學部法醫學的課程，也練習解讀重大刑案的判決書，其中的司法相驗報告，讓他對專家證人的重要角色非常神往。
+適時也遭逢父親中風臥床的變故，讓他體會到醫學照顧與身體疾病的極限，轉而重視心靈成長，及其對身體健康的影響，中醫對這部分有許多獨到的見解。
+
+於臨床的體悟中，他發現醫學需要謙虛，在科學研究的生涯中，更肯定了全人照護對身心靈與社會關係的全方面影響。他漸漸知道，僅研究分子化學與身體的結構，仍不足以完全解釋疾病（特別是癌症）的發生。
+2021年他擔任萬芳醫院口腔顎面外科主任，實踐醫學教育身教的重要，而屢屢發現人性的弱點，提醒學生醫療處置必須注意的重點。 % photodynamic therapy
+面對生與死的議題，他參加「預立醫療意願」的諮商醫師訓練，靈性關懷師的訓練更讓他擁有全人照顧的心法。
+
+接下來，憑藉著對法醫學的熱誠，以醫師科學家的根底，他要接受挑戰，圓一個法醫師的夢，通過國家法醫師的考試，承訓父親的正直，稟持科學的精神，追求真相，讓逝者安心，讓他們親愛的家人放心，跨過死亡的界線，完整了由生到死的靈性平安。
+他感謝親愛的母親與妻子，全力支持，得以投身法醫師的行列，%成為「醫師中的醫師」，
+一向教他要正直的父親，相信在天上一定也是非常讚許的。
+
+% 對法醫的工作有興趣、有服務的心態、人夠正直且家裡願意支持，較有機會。
+% issue the death certificate at home; manner of the death
+
+綜合上述，玆推薦祁力行醫師，符合法醫科學家的資格，有勇氣和決心，投身法醫學研究的行列，寄望能於法醫學研究所老師們的指導之下，任職助理教授，並進修法醫學程及法醫實習，未來能通過法醫師專技高考，符合社會期許，在未來的日子，回到他的初衷，繼續著服務人群的使命。
+%茲推薦祁力行醫師，符合法醫學生的資格，有著無比的勇氣和決心，投身法醫師的行列。祁許在未來的日子，回到他的初衷，完成自己的使命。
+%It is suggested that Dr. Chi satisfy the requirements and be nominated for Professor Yin Niande's Outstanding Rookie Award, which is well-deserved, with the hope that in her future career as a specialist, he will continue to follow his original aim of serving the welfare of patients.
+
+\medskip
+%Sincerely, \\ 
+以上 \vspace{3mm}\\
+%萬芳醫院口腔顎面外科主任 
+%李勝揚 DDS, MS, PhD
+%臺北醫學大學口腔醫學院牙醫學系;
+范家堃 Ph.D. \\
+教授 \vspace{3mm}\\
+臺北醫學大學醫學院國際熱帶醫學研究中心主任 \hspace{7mm} \today
+%  tedfan@tmu.edu.tw 
+% Professor, Chia-Kwung Fan, PhD
+%Chi, Li-Hsing Tex \\
+%Director of OMS, TMWH
+
+\clearpage
+
+%\include{CV_1.tex}
+\includepdf[pages=-]{AcademicCV_Li_Hsing_Chi2022_NTUH.pdf}
+
+\end{letter}
+
+
+
+\end{document}
